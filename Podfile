@@ -7,4 +7,10 @@ target 'TodoManager' do
 
   # Pods for TodoManager
 
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleMaps'
+pod 'FirebaseUI'
+
+
 end
