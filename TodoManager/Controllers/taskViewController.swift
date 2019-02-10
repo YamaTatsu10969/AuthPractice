@@ -48,7 +48,7 @@ class taskViewController: UIViewController , UITextViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showCountText()
+        
         
         //文字数制限のため
         descriptionTextView.delegate = self
@@ -63,6 +63,7 @@ class taskViewController: UIViewController , UITextViewDelegate{
         if let tmpDescription = self.editTask?.description {
             self.descriptionTextView.text = tmpDescription
         }
+        showCountText()
 
         // Do any additional setup after loading the view.
     }
@@ -89,13 +90,14 @@ class taskViewController: UIViewController , UITextViewDelegate{
                     taskCollection.editTask(task: task, indexPath: selectedIndexPath)
                 
             }
-            
+        // 追加の時
         } else {
+            let addedTask = Task()
+            addedTask.title = title
             if let description = descriptionTextView.text {
-                taskCollection.addTask(title: title,description: description)
-            } else {
-                taskCollection.addTask(title: title)
+                addedTask.description = description
             }
+            taskCollection.addTask(task: addedTask)
         }
         
         

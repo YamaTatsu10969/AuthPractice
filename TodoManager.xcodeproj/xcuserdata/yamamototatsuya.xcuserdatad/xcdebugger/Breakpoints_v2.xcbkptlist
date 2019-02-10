@@ -8,9 +8,10 @@
          <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
+            condition = "po $arg1"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Models/TaskCollection.swift"
-            timestampString = "571138076.0494649"
+            timestampString = "571476345.11929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -26,13 +27,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Models/TaskCollection.swift"
-            timestampString = "571138076.04953"
+            timestampString = "571476345.119529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "TaskCollection"
-            landmarkType = "3">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "editTask(task:indexPath:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,7 +43,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/TaskListTableViewController.swift"
-            timestampString = "570697040.007352"
+            timestampString = "571472179.230647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -58,12 +59,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Models/TaskCollection.swift"
-            timestampString = "571138076.049602"
+            timestampString = "571476345.1196049"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "deleteTask(taskNum:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "editTask(task:indexPath:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,7 +75,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/taskViewController.swift"
-            timestampString = "570113924.866533"
+            timestampString = "571476345.1196491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -90,7 +91,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/taskViewController.swift"
-            timestampString = "570113924.866815"
+            timestampString = "571476345.1198061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -106,7 +107,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/TaskListTableViewController.swift"
-            timestampString = "570697040.007818"
+            timestampString = "571472179.231477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
