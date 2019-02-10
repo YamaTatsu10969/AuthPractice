@@ -8,7 +8,7 @@
 
 import Foundation
 
-// protocol は interface とか abstract 見たなもの
+// protocol は interface とか abstract みたいなもの
 // 以下では必ずsaved ()を実装してください！となる。
 protocol TaskCollectionDelegate: class {
     func saved()
@@ -34,18 +34,39 @@ class TaskCollection {
     
     var tasks: [Task] = []
     
-    func addTask(title: String) {
+    func addTask(title: String, description: String) {
         let task = Task()
         task.title = title
+        task.description = description
         //task.descriptin = description
         self.tasks.append(task)
         save()
     }
     
+    func addTask(title: String) {
+        let task = Task()
+        task.title = title
+        self.tasks.append(task)
+        save()
+    }
+    
+    func editTask(task: Task,indexPath: Int) {
+        
+        //task.title = title
+        //task.descriptin = description
+        self.tasks[indexPath] = task
+        save()
+    }
+    
+    func deleteTask(taskNum: Int){
+        self.tasks.remove(at: taskNum)
+        //delegate?.saved()
+    }
+    
     func save() {
         //シリアル化 → 配列を文字列にするもの　よくあるのはJsonにして、DBに送る
-        let data = try! PropertyListEncoder().encode(tasks)
-        userDefaults.set(data, forKey:"tasks")
+        //let data = try! PropertyListEncoder().encode(tasks)
+        userDefaults.set(tasks, forKey:"tasks")
         print("test")
         delegate?.saved()
         
@@ -58,5 +79,7 @@ class TaskCollection {
             self.tasks = tasks
         }
     }
+    
+   
     
 }
