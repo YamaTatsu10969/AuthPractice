@@ -50,6 +50,13 @@ class TaskCollection {
         save()
     }
     
+    func addTask(task: Task) {
+//        let task = Task()
+//        task.title = title
+        self.tasks.append(task)
+        save()
+    }
+    
     func editTask(task: Task,indexPath: Int) {
         
         //task.title = title
@@ -60,13 +67,13 @@ class TaskCollection {
     
     func deleteTask(taskNum: Int){
         self.tasks.remove(at: taskNum)
-        //delegate?.saved()
+        delegate?.saved()
     }
     
     func save() {
         //シリアル化 → 配列を文字列にするもの　よくあるのはJsonにして、DBに送る
-        //let data = try! PropertyListEncoder().encode(tasks)
-        userDefaults.set(tasks, forKey:"tasks")
+        let data = try! PropertyListEncoder().encode(tasks)
+        userDefaults.set(data, forKey:"tasks")
         print("test")
         delegate?.saved()
         

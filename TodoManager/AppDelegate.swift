@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import FirebaseUI
+import TwitterKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    override init() {
+        super.init()
+        // Firebase関連の機能を使う前に必要
+        FirebaseApp.configure()
+    }
+    
+//    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        //Twitter認証用のイニシャライズ
+//        TWTRTwitter.sharedInstance().start(withConsumerKey:"twitterのAPIキー",consumerSecret:"twitterのAPIシークレット")
+//        return true
+//    }
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"twitterのAPIキー",consumerSecret:"twitterのAPIシークレット")
         return true
     }
 

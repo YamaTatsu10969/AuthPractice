@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0BC50227253F78C17A71008A /* Pods_TodoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4E1A0AD1B62B03E726CDCD /* Pods_TodoManager.framework */; };
+		675FD29E22100034005E1B64 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675FD29D22100034005E1B64 /* login.storyboard */; };
+		675FD2A02210093F005E1B64 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675FD29F2210093F005E1B64 /* loginViewController.swift */; };
+		675FD2A222100ABC005E1B64 /* privateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675FD2A122100ABC005E1B64 /* privateFile.swift */; };
 		67F75DE121F2BAF1007939A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F75DE021F2BAF1007939A0 /* AppDelegate.swift */; };
 		67F75DE621F2BAF1007939A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F75DE421F2BAF1007939A0 /* Main.storyboard */; };
 		67F75DE821F2BAF1007939A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F75DE721F2BAF1007939A0 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675FD29D22100034005E1B64 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		675FD29F2210093F005E1B64 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		675FD2A122100ABC005E1B64 /* privateFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privateFile.swift; sourceTree = "<group>"; };
 		67F75DDD21F2BAF1007939A0 /* TodoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F75DE021F2BAF1007939A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F75DE521F2BAF1007939A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		675FD29C2210000E005E1B64 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				67F75DE421F2BAF1007939A0 /* Main.storyboard */,
+				675FD29D22100034005E1B64 /* login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		67F75DD421F2BAF1007939A0 = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +84,10 @@
 			children = (
 				67F75DF321F2BBF7007939A0 /* Models */,
 				67F75DF221F2BBE2007939A0 /* Controllers */,
-				67F75DE021F2BAF1007939A0 /* AppDelegate.swift */,
-				67F75DE421F2BAF1007939A0 /* Main.storyboard */,
+				675FD29C2210000E005E1B64 /* Storyboard */,
 				67F75DE721F2BAF1007939A0 /* Assets.xcassets */,
+				67F75DE021F2BAF1007939A0 /* AppDelegate.swift */,
+				675FD2A122100ABC005E1B64 /* privateFile.swift */,
 				67F75DE921F2BAF1007939A0 /* LaunchScreen.storyboard */,
 				67F75DEC21F2BAF1007939A0 /* Info.plist */,
 			);
@@ -83,6 +99,7 @@
 			children = (
 				67F75DF421F2BC66007939A0 /* TaskListTableViewController.swift */,
 				67F75DF821F2CB65007939A0 /* taskViewController.swift */,
+				675FD29F2210093F005E1B64 /* loginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675FD29E22100034005E1B64 /* login.storyboard in Resources */,
 				67F75DEB21F2BAF1007939A0 /* LaunchScreen.storyboard in Resources */,
 				67F75DE821F2BAF1007939A0 /* Assets.xcassets in Resources */,
 				67F75DE621F2BAF1007939A0 /* Main.storyboard in Resources */,
@@ -303,7 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F75DF521F2BC66007939A0 /* TaskListTableViewController.swift in Sources */,
+				675FD2A222100ABC005E1B64 /* privateFile.swift in Sources */,
 				67F75DF921F2CB65007939A0 /* taskViewController.swift in Sources */,
+				675FD2A02210093F005E1B64 /* loginViewController.swift in Sources */,
 				67F75DFB21F2D158007939A0 /* Task.swift in Sources */,
 				67F75DE121F2BAF1007939A0 /* AppDelegate.swift in Sources */,
 				67F75DF721F2CA6C007939A0 /* TaskCollection.swift in Sources */,
