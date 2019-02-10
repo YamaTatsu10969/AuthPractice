@@ -28,13 +28,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/loginViewController.swift"
-            timestampString = "571479589.269515"
+            timestampString = "571482366.4944021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "loginViewController"
-            landmarkType = "3">
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "didTouchedTwitterLoginButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

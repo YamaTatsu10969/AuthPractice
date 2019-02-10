@@ -13,7 +13,21 @@ class loginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
+            if (session != nil) {
+                print("signed in as \(session!.userName)");
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                // storyboardファイル名称が  "Main"
+                
+                let viewcontroller = storyboard.instantiateViewController(withIdentifier: "taskListNavigationController")
+                // 上記指定したstoryboardの中のVCを指定（storyboardIDでwithIdentifierを指定）
+                self.present(viewcontroller, animated: true, completion: nil)
+            } else {
+                print("error: \(String(describing: error?.localizedDescription))");
+            }
+        })
+        logInButton.center = self.view.center
+        self.view.addSubview(logInButton)
         // Do any additional setup after loading the view.
     }
     
