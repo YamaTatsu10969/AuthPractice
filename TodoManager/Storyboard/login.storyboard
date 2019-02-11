@@ -17,14 +17,6 @@
                     <view key="view" contentMode="scaleToFill" id="5sx-uK-71r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImA-cx-rJz" customClass="login">
-                                <rect key="frame" x="109" y="112" width="170" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sign in with Twitter" image="twtr-icn-logo-white.png"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="p8y-QE-elo"/>
                     </view>
@@ -34,7 +26,4 @@
             <point key="canvasLocation" x="-71" y="138"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="twtr-icn-logo-white.png" width="16" height="13"/>
-    </resources>
 </document>
