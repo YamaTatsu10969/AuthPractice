@@ -76,39 +76,40 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseUI (6.0.0):
-    - FirebaseUI/Anonymous (= 6.0.0)
-    - FirebaseUI/Auth (= 6.0.0)
-    - FirebaseUI/Database (= 6.0.0)
-    - FirebaseUI/Email (= 6.0.0)
-    - FirebaseUI/Facebook (= 6.0.0)
-    - FirebaseUI/Firestore (= 6.0.0)
-    - FirebaseUI/Google (= 6.0.0)
-    - FirebaseUI/Phone (= 6.0.0)
-    - FirebaseUI/Storage (= 6.0.0)
-    - FirebaseUI/Twitter (= 6.0.0)
-  - FirebaseUI/Anonymous (6.0.0):
+  - FirebaseUI (6.1.0):
+    - FirebaseUI/Anonymous (= 6.1.0)
+    - FirebaseUI/Auth (= 6.1.0)
+    - FirebaseUI/Database (= 6.1.0)
+    - FirebaseUI/Email (= 6.1.0)
+    - FirebaseUI/Facebook (= 6.1.0)
+    - FirebaseUI/Firestore (= 6.1.0)
+    - FirebaseUI/Google (= 6.1.0)
+    - FirebaseUI/Phone (= 6.1.0)
+    - FirebaseUI/Storage (= 6.1.0)
+    - FirebaseUI/Twitter (= 6.1.0)
+  - FirebaseUI/Anonymous (6.1.0):
     - FirebaseUI/Auth
-  - FirebaseUI/Auth (6.0.0):
+  - FirebaseUI/Auth (6.1.0):
     - Firebase/Auth (~> 5.0)
-  - FirebaseUI/Database (6.0.0):
+    - GoogleUtilities/UserDefaults
+  - FirebaseUI/Database (6.1.0):
     - Firebase/Database (~> 5.0)
-  - FirebaseUI/Email (6.0.0):
+  - FirebaseUI/Email (6.1.0):
     - FirebaseUI/Auth
-  - FirebaseUI/Facebook (6.0.0):
-    - FBSDKLoginKit (~> 4.39)
+  - FirebaseUI/Facebook (6.1.0):
+    - FBSDKLoginKit (~> 4.35)
     - FirebaseUI/Auth
-  - FirebaseUI/Firestore (6.0.0):
+  - FirebaseUI/Firestore (6.1.0):
     - Firebase/Firestore
-  - FirebaseUI/Google (6.0.0):
+  - FirebaseUI/Google (6.1.0):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
-  - FirebaseUI/Phone (6.0.0):
+  - FirebaseUI/Phone (6.1.0):
     - FirebaseUI/Auth
-  - FirebaseUI/Storage (6.0.0):
+  - FirebaseUI/Storage (6.1.0):
     - Firebase/Storage (~> 5.0)
     - SDWebImage (~> 4.0)
-  - FirebaseUI/Twitter (6.0.0):
+  - FirebaseUI/Twitter (6.1.0):
     - FirebaseUI/Auth
     - TwitterKit (~> 3.0)
   - GoogleAppMeasurement (5.5.0):
@@ -184,7 +185,6 @@ PODS:
     - TwitterCore (>= 3.2.0)
 
 DEPENDENCIES:
-  - Firebase/Auth
   - Firebase/Core
   - FirebaseUI
   - GoogleMaps
@@ -234,7 +234,7 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 6f2b93b4f7bb8416628142763c91ccc00fa04c86
   FirebaseInstanceID: 97ea7a5dca9afd72c79bfcdddb7a44aa1cbb42a1
   FirebaseStorage: 29075f874c2b3cf61e5221a62c4ceefc809e5412
-  FirebaseUI: bf9c339b1ebea2df20396865cb47b7bf14b2f3a8
+  FirebaseUI: 9107a94d6637ca22eedd307a7e3d38c1a450f93a
   GoogleAppMeasurement: 621f3bc6211d5ba548debe01fafad30cf5ab6859
   GoogleMaps: 941cd655e009b4d8e42df19a3d749bc3fccec973
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
@@ -250,6 +250,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 5d9f11b1b8205da79b09643bdf5d0f5b658dc285
+PODFILE CHECKSUM: eaa7e5bd40388233c419422d9221a82102b6d133
 
 COCOAPODS: 1.5.3

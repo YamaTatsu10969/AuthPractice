@@ -18,14 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     override init() {
         super.init()
-        // Firebase関連の機能を使う前に必要
+        //Twitter認証用のイニシャライズ
+        FirebaseApp.configure()
         TWTRTwitter.sharedInstance().start(withConsumerKey:privateFile.shared.twitterAPI,consumerSecret:privateFile.shared.twitterSecretAPIKey)
 
     }
     
     private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Firebase関連の機能を使う前に必要
         FirebaseApp.configure()
-        //Twitter認証用のイニシャライズ
+        
         return true
     }
 
