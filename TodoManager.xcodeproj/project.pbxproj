@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BC50227253F78C17A71008A /* Pods_TodoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4E1A0AD1B62B03E726CDCD /* Pods_TodoManager.framework */; };
+		674544FC221EC8FC00EEFCE5 /* TwitterSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674544FB221EC8FC00EEFCE5 /* TwitterSubmitViewController.swift */; };
 		675448B3221018E100BD50F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 675448B2221018E100BD50F0 /* GoogleService-Info.plist */; };
 		675FD29E22100034005E1B64 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675FD29D22100034005E1B64 /* login.storyboard */; };
 		675FD2A02210093F005E1B64 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675FD29F2210093F005E1B64 /* loginViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		674544FB221EC8FC00EEFCE5 /* TwitterSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwitterSubmitViewController.swift; path = TodoManager/Controllers/TwitterSubmitViewController.swift; sourceTree = SOURCE_ROOT; };
 		675448B2221018E100BD50F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		675FD29D22100034005E1B64 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		675FD29F2210093F005E1B64 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				67F75DF421F2BC66007939A0 /* TaskListTableViewController.swift */,
 				67F75DF821F2CB65007939A0 /* taskViewController.swift */,
 				675FD29F2210093F005E1B64 /* loginViewController.swift */,
+				674544FB221EC8FC00EEFCE5 /* TwitterSubmitViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				675FD2A02210093F005E1B64 /* loginViewController.swift in Sources */,
 				67F75DFB21F2D158007939A0 /* Task.swift in Sources */,
 				67F75DE121F2BAF1007939A0 /* AppDelegate.swift in Sources */,
+				674544FC221EC8FC00EEFCE5 /* TwitterSubmitViewController.swift in Sources */,
 				67F75DF721F2CA6C007939A0 /* TaskCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

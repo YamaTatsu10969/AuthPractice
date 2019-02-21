@@ -36,7 +36,12 @@
                             <outlet property="delegate" destination="u5S-UF-oIE" id="Qni-OS-eY0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="Qed-l3-i6d">
+                    <navigationItem key="navigationItem" title="Todo" id="Qed-l3-i6d" colorLabel="IBBuiltInLabel-Green">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="twitter_icon_48px" id="kQx-9B-NFi">
+                            <connections>
+                                <segue destination="h1l-4f-KvB" kind="show" id="Zrv-Es-k6C"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oOH-hg-Yct">
                             <connections>
                                 <action selector="didTouchAddButton:" destination="u5S-UF-oIE" id="bnl-Zj-ceo"/>
@@ -51,6 +56,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNz-bb-2hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="271" y="145"/>
+        </scene>
+        <!--Twitter submit-->
+        <scene sceneID="NEa-WD-tjr">
+            <objects>
+                <viewController id="h1l-4f-KvB" customClass="TwitterSubmitViewController" customModule="TodoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWF-BF-uD7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tef-yA-Gcc">
+                                <rect key="frame" x="123" y="469" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="twitter_icon_128px_blue"/>
+                                <connections>
+                                    <action selector="didTouchedTweetButton:" destination="h1l-4f-KvB" eventType="touchUpInside" id="bAr-Af-mag"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zZH-By-Xm9">
+                                <rect key="frame" x="67" y="141" width="240" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78049701859999998" green="0.99193829300000003" blue="0.94590571720000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CC1-eO-ZbG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Twitter submit" id="FqM-5J-VdN"/>
+                    <connections>
+                        <outlet property="tweetText" destination="zZH-By-Xm9" id="7pw-LX-tEr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sar-P6-L6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.60000000000002" y="941.37931034482767"/>
         </scene>
         <!--Add Todo-->
         <scene sceneID="9VR-Eh-Adg">
@@ -155,6 +196,10 @@
             <point key="canvasLocation" x="-494" y="146"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="twitter_icon_128px_blue" width="128" height="128"/>
+        <image name="twitter_icon_48px" width="48" height="48"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GT3-hX-qO1"/>
     </inferredMetricsTieBreakers>
