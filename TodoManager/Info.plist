@@ -22,9 +22,23 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>twitterkit-KOVoRCVIbXYu2VGhAAuEqO4dh</string>
+                <string>fb2142787232703183</string>
 			</array>
 		</dict>
 	</array>
+    <key>FacebookAppID</key>
+    <string>2142787232703183</string>
+    <key>FacebookDisplayName</key>
+    <string>TodoManager</string>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+    
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>

@@ -28,13 +28,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoManager/Controllers/loginViewController.swift"
-            timestampString = "571546869.658504"
+            timestampString = "572439097.5195529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "186"
+            endingLineNumber = "186">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
