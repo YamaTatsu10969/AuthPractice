@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/yamamototatsuya/workspace/02_Swift/Git/AuthPractice/TodoManager/TwitterTableViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/yamamototatsuya/workspace/02_Swift/Git/AuthPractice/TodoManager/TwitterTableViewCell.xib">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/yamamototatsuya/workspace/02_Swift/Git/AuthPractice/TodoManager/Controllers/TwitterTimelineTableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:TodoManager.xcodeproj">
    </FileRef>
    <FileRef

@@ -42,11 +42,18 @@
                                 <segue destination="h1l-4f-KvB" kind="show" id="Zrv-Es-k6C"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oOH-hg-Yct">
-                            <connections>
-                                <action selector="didTouchAddButton:" destination="u5S-UF-oIE" id="bnl-Zj-ceo"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="oOH-hg-Yct">
+                                <connections>
+                                    <action selector="didTouchAddButton:" destination="u5S-UF-oIE" id="bnl-Zj-ceo"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="timeline" image="twitter_icon_32px_red" id="hA9-oi-g74">
+                                <connections>
+                                    <segue destination="9W7-82-gBg" kind="show" id="j0w-lK-SUV"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="oOH-hg-Yct" id="vsN-Tj-P75"/>
@@ -91,7 +98,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sar-P6-L6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.60000000000002" y="941.37931034482767"/>
+            <point key="canvasLocation" x="-554" y="1057"/>
+        </scene>
+        <!--Twitter Timeline Table View Controller-->
+        <scene sceneID="ecz-i0-Cqz">
+            <objects>
+                <tableViewController id="9W7-82-gBg" customClass="TwitterTimelineTableViewController" customModule="TodoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="C72-wH-Pc0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Q1A-B9-yQ6" customClass="TwitterTableViewCell" customModule="TodoManager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1A-B9-yQ6" id="qAZ-q7-tnt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9W7-82-gBg" id="I18-Wb-kUo"/>
+                            <outlet property="delegate" destination="9W7-82-gBg" id="inq-Gc-Qa9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cm-3b-P3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="940"/>
         </scene>
         <!--Add Todo-->
         <scene sceneID="9VR-Eh-Adg">
@@ -198,6 +233,7 @@
     </scenes>
     <resources>
         <image name="twitter_icon_128px_blue" width="128" height="128"/>
+        <image name="twitter_icon_32px_red" width="32" height="32"/>
         <image name="twitter_icon_48px" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>

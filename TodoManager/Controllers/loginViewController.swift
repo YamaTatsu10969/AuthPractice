@@ -60,6 +60,9 @@ class loginViewController: UIViewController, FUIAuthDelegate, FBSDKLoginButtonDe
         FUITwitterAuth()
     ]
     
+    var authToken = ""
+    var authTokenSecret = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.authUI.delegate = self
@@ -78,9 +81,9 @@ class loginViewController: UIViewController, FUIAuthDelegate, FBSDKLoginButtonDe
                     return
                 }
                 
-                let authToken = twSession.authToken
-                let authTokenSecret = twSession.authTokenSecret
-                let credential = TwitterAuthProvider.credential(withToken: authToken, secret: authTokenSecret)
+                self.authToken = twSession.authToken
+                self.authTokenSecret = twSession.authTokenSecret
+                let credential = TwitterAuthProvider.credential(withToken: self.authToken, secret: self.authTokenSecret)
                 
                 Auth.auth().signIn(with: credential) { (authResult, error) in
                     if let error = error { return }
